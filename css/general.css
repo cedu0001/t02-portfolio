@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+:root {
+	--bg-color: #fff6d2;
+	--text-color: #191319;
+    --green-gray: #F9FFF6;
+	--light-g: #D5ED74;
+    --light-p: #C3B0F6;
+    --dark-p: #9B8BC7;
+	--light-pur-pink: #E5B4D2;
+}
+
+
+body {
+	background-color: var(--bg-color);
+}
+
+
+
