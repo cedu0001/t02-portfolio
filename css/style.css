@@ -1,11 +1,11 @@
 
-
 ul{
     margin-top: 200px;
     margin-left: 86%;
     background-color: var(--light-pur-pink);
     position: fixed;
     padding: 20px;
+    z-index: 2;
 }
 
 li{
@@ -17,11 +17,26 @@ li{
     padding: 40px 180px;
 }
 
-.om-m {
-	background-image: url(/img/Rectangle\ 57.svg);
-	height: 1000px; /* You must set a specified height */
-  	background-position: center; /* Center the image */
- 	background-repeat: no-repeat; /* Do not repeat the image */
-  	background-size: cover;
-	
+.green-bg{
+    background-color: var(--light-g);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    
 }
+
+.stretch{
+    width: 100vw;
+    display: block;
+    height: 100px;
+}
+
+#flip{
+    rotate: -180deg;
+}
+
+
+    div {
+    max-width: 1280px;
+    padding: 40px 180px;
+     }

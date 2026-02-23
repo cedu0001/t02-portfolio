@@ -15,10 +15,35 @@
 	--light-pur-pink: #E5B4D2;
 }
 
+@font-face {
+	font-family: gamja;
+  src: url(../fonts/GamjaFlower-Regular.ttf);
+}
 
-body {
-	background-color: var(--bg-color);
+@font-face {
+  font-family: karla-r;
+  src: url(../fonts/Karla-Regular.ttf);
+}
+
+@font-face {
+  font-family: karla-sb;
+  src: url(../fonts/Karla-SemiBold.ttf);
+}
+
+h1, h2{
+	font-family: gamja;
+}
+
+h1{
+	font-size: 64px;
+}
+
+h2{
+	font-size: 48px;
 }
 
 
 
+body {
+	background-color: var(--bg-color);
+}
