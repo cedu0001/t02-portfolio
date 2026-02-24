@@ -30,46 +30,91 @@
   src: url(../fonts/Karla-SemiBold.ttf);
 }
 
+/* fonte og str. for tekst */
+
 h1, h2{
 	font-family: gamja;
-}
-
-h1{
-	font-size: 64px;
-}
-
-h2{
-	font-size: 48px;
 }
 
 p, a {
 	font-family: karla-r;
 }
 
+h1{
+	font-size: 13vh;
+}
+
+h2{
+	font-size: 10vh;
+}
+
+a, p{
+	font-size: 4.5vh;
+}
+
+h1,h2,p,a{
+	color: var(--text-color);
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
 a{
-	font-size: 20px;
+	cursor: pointer;
+}
+
+body {
+	background-color: var(--bg-color);
+}
+
+/* computer/ desktop */
+@media (min-width: 800px) {
+.container, #wave{
+    margin: auto 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .off-screen-menu {
     display: none;
 }
 
+/* om mig */
 
-
-.container, #wave{
-    max-width: 1280px;
-    padding: 40px 180px;
+.grid_1-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
-@media (max-width: 800px) {
+#om-mig-img{
+	max-width: 90%;
+	height: auto;
+	display: block;
+}
 
-	.container, #wave{
-		max-width: 100px;
-    	padding: 10px 80px;
+}
+
+/* mobil */
+@media (max-width: 800px) {
+	
+	h1{
+		font-size: 40px;
 	}
 
-	a {
-		color: #fff6d2;
+	h2{
+		font-size: 36px;
+	}
+
+	a, p{
+		font-size: 20px;
+	}
+
+
+	.container, #wave{
+    margin: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 	}
 
 	.li-desk {
@@ -80,8 +125,10 @@ a{
    	margin-left: 86%;
     background-color: var(--light-pur-pink);
     position: fixed;
-    padding: 20px;
     z-index: 2;
+	height: 9px;
+  	width: 19px;
+	border-radius: 15px;
 } 
 
 	/* off-screen-menu */
@@ -90,7 +137,7 @@ a{
 		background-color: var(--light-pur-pink);
 		height: 100vh;
 		width: 100%;
-		max-width: 450px;
+		max-width: 250px;
 		position: fixed;
 		top: 0;
 		right: -450px;
@@ -103,9 +150,11 @@ a{
 		transition: 0.3s ease;
 		justify-content: flex-start;
 		padding-top: 100px;
+		
 	}
 	.off-screen-menu.active {
 		right: 0;
+		
 	}
 
 	/* ham menu */
@@ -113,8 +162,9 @@ a{
 		z-index: 10;
 		height: 50px;
 		width: 40px;
-		margin-left: 86%;
+		margin-left: 88%;
 		position: fixed;
+	
 	}
 	.ham-menu span {
 		height: 5px;
@@ -126,6 +176,7 @@ a{
 		top: 50%;
 		transform: translate(-50%, -50%);
 		transition: 0.3s ease;
+		z-index: 10;
 	}
 	.ham-menu span:nth-child(1) {
 		top: 25%;
@@ -134,7 +185,7 @@ a{
 		top: 75%;
 	}
 	.ham-menu.active span {
-		background-color: var(--background-color);
+		background-color: var(--text-color);
 	}
 	.ham-menu.active span:nth-child(1) {
 		top: 50%;
@@ -148,6 +199,13 @@ a{
 		transform: translate(-50%, -50%) rotate(-45deg);
 	}
 
+/* om mig - mobil */
+
+#om-mig-img{
+	max-width: 90%;
+	height: auto;
+	display: block;
+}
 
 
 }

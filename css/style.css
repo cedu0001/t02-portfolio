@@ -1,6 +1,6 @@
-body {
-	background-color: var(--bg-color);
-}
+
+
+/* header */
 
 .ul-desk{
     margin-left: 86%;
@@ -8,18 +8,25 @@ body {
     position: fixed;
     padding: 20px;
     z-index: 2;
+    border-radius: 15px;
 } 
 
 .li-desk{
     margin-top: 20px;
 }
 
+.ul-desk li a.active-link {
+    background-color: var(--light-g);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* om mig */
+
 .green-bg{
     background-color: var(--light-g);
     padding-top: 50px;
-    padding-bottom: 50px;
-
-    
+    padding-bottom: 50px; 
 }
 
 .stretch{
@@ -32,4 +39,16 @@ body {
     rotate: -180deg;
 }
 
+/* mine evner */
+
+
+
+/* projekter */
+
+#projekter{
+    background-color: var(--light-p);
+}
+
+
+/* kontakt */
 
