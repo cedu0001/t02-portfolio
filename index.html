@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celia Nielsen | Portfolio</title>
-    <link rel="stylesheet" href="/css/general.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script type="module" src="/js/burger-menu.js"></script>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/burger-menu.js"></script>
 </head>
 <body>
     <header>
@@ -14,20 +14,38 @@
             <h1>Celia Nielsen</h1>
             <h1>Portfolio</h1>
         </section>
+
+        <!-- Mobil header -->
+			<div class="off-screen-menu">
+				<ul>
+					<li><a href="#om-mig">Om mig</a></li>
+					<li><a href="#evner">Mine evner</a></li>
+					<li><a href="#projekter">Projekter</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</div>
+
         <nav>
-            <ul>
-                <li><a href="#om-mig">Om mig</a></li>
-                <li><a href="#evner">Mine evner</a></li>
-                <li><a href="#projekter">Projekter</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+            <!-- desktop header -->
+            <ul class="ul-desk">
+                <li class="li-desk"><a href="#om-mig">Om mig</a></li>
+                <li class="li-desk"><a href="#evner">Mine evner</a></li>
+                <li class="li-desk"><a href="#projekter">Projekter</a></li>
+                <li class="li-desk"><a href="#kontakt">Kontakt</a></li>
             </ul>
+
+            <div class="ham-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
         </nav>
     </header>
 
     <main>
         <img src="/img/Rectangle 23808.png"  class="stretch" alt="">
         <section class="green-bg">
-            <div>
+            <div id="wave">
                 <h2 id="om-mig">Om mig</h2>
             </div>
         </section>
@@ -39,6 +57,11 @@
 
         <section class="container">
             <h2 id="projekter">Projekter</h2>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </section>
 
     </main>

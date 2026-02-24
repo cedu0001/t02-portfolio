@@ -1,20 +1,17 @@
+body {
+	background-color: var(--bg-color);
+}
 
-ul{
-    margin-top: 200px;
+.ul-desk{
     margin-left: 86%;
     background-color: var(--light-pur-pink);
     position: fixed;
     padding: 20px;
     z-index: 2;
-}
+} 
 
-li{
+.li-desk{
     margin-top: 20px;
-}
-
-.container{
-    max-width: 1280px;
-    padding: 40px 180px;
 }
 
 .green-bg{
@@ -36,7 +33,3 @@ li{
 }
 
 
-    div {
-    max-width: 1280px;
-    padding: 40px 180px;
-     }
