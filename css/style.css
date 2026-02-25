@@ -1,4 +1,7 @@
-
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* header */
 
@@ -50,5 +53,120 @@
 }
 
 
+/* --------- SLIDESHOW CONTAINER --------- */
+.slideshow-container {
+	position: relative; 
+	margin: auto; 
+	overflow: hidden; 
+	display: grid;
+	grid-template-columns: auto 1fr auto; 
+	align-items: center;
+	background-color: var(--green-gray);
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+#m-nudler {
+	color: white;
+	grid-column: 2/3;
+	text-align: center;
+	font-size: 24px;
+}
+
+/* --------- SLIDES --------- */
+.slide {
+	display: none; 
+	grid-column: 2; 
+}
+
+
+.active {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+/* --------- LAYOUT FOR TEKST & BILLEDE --------- */
+.slide-content {
+	display: flex;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	align-items: center; 
+	gap: 20px; 
+}
+
+.slide-content h3,
+.slide-content p {
+	color: rgb(0, 0, 0);
+}
+
+/* Billede styling */
+.slide img {
+	width: 100%;
+	max-width: 200px; 
+}
+
+.slideshow-img {
+	max-height: 200px;
+	object-fit: contain;
+}
+
+/* --------- CTA KNAP --------- */
+.cta {
+	display: inline-block;
+	margin-top: 10px; 
+	padding: 10px 20px; 
+	background-color: var(--light-pur-pink); 
+	color: var(--text-color); 
+	font-weight: bold; 
+	border-radius: 45px; 
+	font-family: robotomono;
+}
+
+/* --------- NAVIGATIONSPILE --------- */
+.prev,
+.next {
+	background-color: var(--light-pur-pink);
+	color: var(--text-color); 
+	font-size: 20px; 
+	padding: 10px; 
+	border: none; 
+	cursor: pointer; 
+    border-radius: 15px;
+}
+
+/* --------- INDIKATORPRIKKER --------- */
+.slideshow-indicators {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+.dot {
+	height: 12px;
+	width: 12px;
+	margin: 0 5px;
+	background-color: gray;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.dot.active {
+	background-color: var(--light-g);
+}
+
+/* slideshow slut */
+
+
+
 /* kontakt */
 
+
+.footer-style{
+    margin-top: 30px;
+	margin-bottom: 60px;
+}

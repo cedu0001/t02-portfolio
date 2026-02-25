@@ -66,6 +66,8 @@ body {
 	background-color: var(--bg-color);
 }
 
+
+
 /* computer/ desktop */
 @media (min-width: 800px) {
 .container, #wave{
@@ -91,6 +93,48 @@ body {
 	height: auto;
 	display: block;
 }
+
+
+/* projekter */
+.slideshow-indicators {
+		grid-column: 2/3;
+		display: flex;
+		justify-content: center;
+		margin-top: 5px;
+		padding-bottom: 10px;
+	}
+
+	.slideshow-container {
+		position: relative; /* Gør det muligt at placere pile absolut i forhold til containeren */
+		width: 1000px;
+		height: 500px;
+		padding-top: 25px;
+	}
+	/* Billede styling */
+	.slide img {
+		width: 100%; /* Sørger for, at billedet ikke overstiger sin container */
+		max-width: 300px; /* Begrænser billedets maksimale bredde */
+	}
+
+	.slideshow-img {
+		margin-left: 100px;
+		max-height: 350px;
+		object-fit: contain;
+	}
+
+	.prev,
+	.next {
+		margin: 5px;
+	}
+
+	.prev:hover,
+	.next:hover {
+		color: var(--text-color);
+		background-color: var(--light-g);
+		transition: 0.5s;
+	}
+
+
 
 }
 
@@ -207,5 +251,34 @@ body {
 	display: block;
 }
 
+
+/* projekter */
+.slideshow-container {
+		min-height: 100px;
+		height: 550px;
+	}
+
+	.slide-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* Bevarer layoutet med billede + tekst ved siden af hinanden */
+		gap: 10px; /* Mindre afstand mellem elementer */
+	}
+	.prev,
+	.next {
+		display: none; /* Skjuler navigationspile på mobil, da vi bruger swipe i stedet */
+	}
+
+	.cta {
+		display: inline-block; /* Gør knappen klikbar */
+		margin-bottom: 10px; /* Lidt afstand over knappen */
+		padding: 10px 20px; /* Sikrer plads til knappen */
+		margin-right: 20px;
+	}
+
+	/* Prikker under billedet på mobil */
+	.slideshow-indicators {
+		margin-top: 245px; /* Lidt tættere på billedet */
+		margin-left: -612px; /* Lidt tættere på billedet */
+	}
 
 }

@@ -6,13 +6,19 @@
     <title>Celia Nielsen | Portfolio</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/burger-menu.js"></script>
+    <script src="js/burger-menu.js" defer></script>
+    <script src="js/project.js" defer></script>
 </head>
 <body>
     <header>
         <section>
-            <h1>Celia Nielsen</h1>
-            <h1>Portfolio</h1>
+            <div>
+                <h1>Celia Nielsen</h1>
+                <h1>Portfolio</h1>
+            </div>
+            
+
+
         </section>
 
         <!-- Mobil header -->
@@ -84,18 +90,90 @@
         <section id="projekter">
             <div class="container">
                 <h2>Projekter</h2>
+			<!-- --------- SLIDESHOW CONTAINER --------- -->
+			<div class="slideshow-container">
+				
+
+				<!-- Første slide -->
+				<div class="slide active">
+					<div class="slide-content">
+						<img
+							src="img/nissinkylling.webp"
+							alt="Nissin Kylling kop nudel"
+							class="slideshow-img"
+							loading="lazy"
+						/>
+						<div>
+							<h3>Nissin Kylling Klassisk Asiatisk Stil</h3>
+							<p>
+								En harmonisk blanding af fyldig kyllingebouillon, umami-rige krydderier og perfekt kogte
+								nudler – klar på få minutter!
+							</p>
+							<a href="nyheder.html#nissinkylling" class="cta">læs mere her!</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Andet slide -->
+				<div class="slide">
+					<div class="slide-content">
+						<img src="img/nissinbeef.webp" alt="Nissin Oksekød kop nudel" class="slideshow-img" loading="lazy" />
+						<div>
+							<h3>Nissin Oksekød Aromatisk Stærk Suppe</h3>
+							<p>
+								En kraftig og krydret oksekødsbouillon med dyb umami, bløde nudler og varme krydderier.
+								Perfekt til en intens og aromatisk oplevelse. - klar på få minutter!
+							</p>
+							<a href="nyheder.html#nissinbeef" class="cta">læs mere her!</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tredje slide -->
+				<div class="slide">
+					<div class="slide-content">
+						<img src="img/nissinspicy.webp" alt="Nissin Spicy kop nudel" class="slideshow-img" loading="lazy" />
+						<div>
+							<h3>Nissin Spicy Stærk Chili</h3>
+							<p>
+								Intens varme og dyb chilismag kombineret med lækre nudler for en stærk og tilfredsstillende
+								oplevelse! - klar på få minutter!
+							</p>
+							<a href="nyheder.html#nissinspicy" class="cta">læs mere her!</a>
+						</div>
+					</div>
+				</div>
+
+			
+
+				<!-- Indikatorprikker -->
+              
+				<div class="slideshow-indicators">
+                       <!-- Venstre pil (forrige slide) -->
+				<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
                 <div>
-
-                
-
-                </div>
+					<span class="dot active" onclick="currentSlide(0)"></span>
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+                      	<!-- Højre pil (næste slide) -->
+                         </div>
+				<button class="next" onclick="changeSlide(1)">&#10095;</button>
+				</div>
+              
+			</div>
             </div>
         </section>
 
     </main>
 
-    <footer class="container">
-        <h2 id="kontakt">Kontakt</h2>
+    <footer class="container footer-style">
+            <h2 id="kontakt">Kontakt</h2>
+
+            <div class="flex">
+                <p>LinkedIn</p>
+                <p>mobilnr.</p>
+                <p>skole email</p>
+            </div>
     </footer>
 
 </body>
