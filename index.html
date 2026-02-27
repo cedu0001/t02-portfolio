@@ -140,7 +140,8 @@
                 <h2 class="footer-style">Projekter</h2>
 			<!-- --------- SLIDESHOW CONTAINER --------- -->
 			<div class="slideshow-container">
-				
+                 <!-- Venstre pil (forrige slide) -->
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
 
 				<!-- Første slide -->
 				<div class="slide on">
@@ -199,20 +200,19 @@
 					</div>
 				</div>
 
-			
+			<!-- Højre pil (næste slide) -->
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
 
 				<!-- Indikatorprikker -->
               
 				<div class="slideshow-indicators">
-                       <!-- Venstre pil (forrige slide) -->
-                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+
                     <div>
                         <span class="dot on" onclick="currentSlide(0)"></span>
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot" onclick="currentSlide(2)"></span>
                     </div>
-                    <!-- Højre pil (næste slide) -->
-                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    
 				</div>
               
 			</div>

@@ -41,52 +41,9 @@ h2{
 
 
 
-/* --------- SLIDES --------- */
-.slide {
-	display: none; 
-	grid-column: 2; 
-}
 
 
-.on {
-	display: flex; 
-	justify-content: center; 
-	align-items: center; 
-}
-
-/* --------- LAYOUT FOR TEKST & BILLEDE --------- */
-
-
-.slide-content h3,
-.slide-content p {
-	color: rgb(0, 0, 0);
-}
-
-/* --------- CTA KNAP --------- */
-.cta {
-	display: inline-block;
-	margin-top: 10px; 
-	padding: 10px 20px; 
-	background-color: var(--light-pur-pink); 
-	color: var(--text-color); 
-	font-size: 24px;
-	border-radius: 45px; 
-}
-
-/* --------- NAVIGATIONSPILE --------- */
-.prev,
-.next {
-	background-color: var(--light-pur-pink);
-	color: var(--text-color); 
-	font-size: 20px; 
-	padding: 10px; 
-	border: none; 
-	cursor: pointer; 
-    border-radius: 15px;
-}
-
-/* --------- INDIKATORPRIKKER --------- */
-.slideshow-indicators {
+/* .slideshow-indicators {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
@@ -114,7 +71,7 @@ h2{
 
 .dot.on {
 	background-color: var(--light-pur-pink)
-}
+} */
 
 /* slideshow slut */
 
