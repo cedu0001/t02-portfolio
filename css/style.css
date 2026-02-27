@@ -6,25 +6,7 @@ h2{
 
 /* header */
 
-.ul-desk{
-    margin-left: 88%;
-    background-color: var(--light-pur-pink);
-    position: fixed;
-    padding: 20px;
-    z-index: 2;
-    border-radius: 15px;
-	border: 1.5px solid var(--text-color);
-} 
 
-.li-desk{
-    margin-top: 20px;
-}
-
-.ul-desk li a.active-link {
-    background-color: var(--light-g);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
 
 /* om mig */
 
@@ -58,25 +40,6 @@ h2{
 }
 
 
-/* --------- SLIDESHOW CONTAINER --------- */
-.slideshow-container {
-	position: relative; 
-	margin: auto; 
-	overflow: hidden; 
-	display: grid;
-	grid-template-columns: auto 1fr auto; 
-	align-items: center;
-	background-color: var(--green-gray);
-    margin-bottom: 50px;
-    border-radius: 15px;
-}
-
-#m-nudler {
-	color: white;
-	grid-column: 2/3;
-	text-align: center;
-	font-size: 24px;
-}
 
 /* --------- SLIDES --------- */
 .slide {
@@ -85,39 +48,18 @@ h2{
 }
 
 
-.active {
+.on {
 	display: flex; 
 	justify-content: center; 
 	align-items: center; 
 }
 
 /* --------- LAYOUT FOR TEKST & BILLEDE --------- */
-.slide-content {
-	display: flex;
-	position: relative;
-	display: grid;
-	grid-template-columns: 1fr 1fr; 
-	align-items: center; 
-	gap: 10px; 
-}
+
 
 .slide-content h3,
 .slide-content p {
 	color: rgb(0, 0, 0);
-}
-
-/* Billede styling */
-.slide img {
-	width: 100%;
-	border: 2px solid var(--text-color);
-	border-radius: 15px;
-}
-
-.slideshow-img {
-	max-height: 700px;
-	width: 100%;
-	object-fit: contain;
-	
 }
 
 /* --------- CTA KNAP --------- */
@@ -126,7 +68,8 @@ h2{
 	margin-top: 10px; 
 	padding: 10px 20px; 
 	background-color: var(--light-pur-pink); 
-	color: var(--text-color);  
+	color: var(--text-color); 
+	font-size: 24px;
 	border-radius: 45px; 
 }
 
@@ -161,8 +104,16 @@ h2{
 	cursor: pointer;
 }
 
-.dot.active {
-	background-color: var(--light-g);
+@media (max-width: 800px){
+	.slideshow-indicators div{
+		background-color: aquamarine;
+		
+}
+
+}
+
+.dot.on {
+	background-color: var(--light-pur-pink)
 }
 
 /* slideshow slut */

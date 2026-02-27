@@ -6,24 +6,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
     /* Funktion til at skifte slide */
     window.changeSlide = function(direction) {
-        slides[currentSlideIndex].classList.remove("active");
-        dots[currentSlideIndex].classList.remove("active");
+        slides[currentSlideIndex].classList.remove("on");
+        dots[currentSlideIndex].classList.remove("on");
 
         currentSlideIndex = (currentSlideIndex + direction + slides.length) % slides.length;
 
-        slides[currentSlideIndex].classList.add("active");
-        dots[currentSlideIndex].classList.add("active");
+        slides[currentSlideIndex].classList.add("on");
+        dots[currentSlideIndex].classList.add("on");
     };
 
     /* Funktion til at gå til specifikt slide */
     window.currentSlide = function(n) {
-        slides[currentSlideIndex].classList.remove("active");
-        dots[currentSlideIndex].classList.remove("active");
+        slides[currentSlideIndex].classList.remove("on");
+        dots[currentSlideIndex].classList.remove("on");
 
         currentSlideIndex = n;
 
-        slides[currentSlideIndex].classList.add("active");
-        dots[currentSlideIndex].classList.add("active");
+        slides[currentSlideIndex].classList.add("on");
+        dots[currentSlideIndex].classList.add("on");
     };
 
     /* --------- SWIPE FUNKTIONALITET (MOBIL) --------- */

@@ -77,9 +77,45 @@ p{
 	margin-bottom: 15px;
 }
 
+.slideshow-container {
+	position: relative; 
+	margin: auto; 
+	overflow: hidden; 
+	display: grid;
+	grid-template-columns: auto 1fr auto; 
+	align-items: center;
+	background-color: var(--green-gray);
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+
 
 /* computer/ desktop */
 @media (min-width: 800px) {
+
+	
+
+.ul-desk{
+    margin-left: 88%;
+    background-color: var(--light-pur-pink);
+    position: fixed;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+	border: 1.5px solid var(--text-color);
+} 
+
+.li-desk{
+    margin-top: 20px;
+}
+
+.ul-desk li a.active-link {
+    background-color: var(--light-g);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 .container, #wave{
     margin: auto 180px;
     display: flex;
@@ -100,7 +136,7 @@ p{
 }
 
 #om-mig-img{
-	background-color: #fff6d2;
+	background-color: var(--bg-color);
 	padding-top: 30px;
 	border-radius: 15px;
 	max-width: 90%;
@@ -110,44 +146,128 @@ p{
 }
 
 
-/* projekter */
+/* --------- SLIDESHOW CONTAINER --------- */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: var(--green-gray);
+    margin-bottom: 50px;
+    border-radius: 15px;
+    max-width: 1200px;
+    min-height: 400px;
+    width: 90%;
+}
+
+/* --------- SLIDES --------- */
+.slide {
+    display: none;
+    grid-column: 2;
+}
+
+.on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------- LAYOUT FOR TEKST & BILLEDE --------- */
+.slide-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.slide-content h3 {
+    font-size: clamp(18px, 2.5vw, 32px);
+    color: rgb(0, 0, 0);
+}
+
+.slide-content p {
+    font-size: clamp(14px, 1.5vw, 20px);
+    color: rgb(0, 0, 0);
+}
+
+/* Billede styling */
+.slide img{
+	width: 100%;
+	border: 2px solid var(--text-color);
+	border-radius: 15px;
+}
+
+.slideshow-img {
+	max-height: 600px;
+	width: 100%;
+	object-fit: contain;
+	margin-right: 30px;
+	
+}
+
+/* --------- CTA KNAP --------- */
+.cta {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--light-pur-pink);
+    color: var(--text-color);
+    border-radius: 45px;
+	font-size: 24px;
+}
+
+.cta:hover, .next:hover, .prev:hover{
+	background-color: var(--light-g);
+	transition: 0.2s;
+}
+
+/* --------- NAVIGATIONSPILE --------- */
+.prev,
+.next {
+    background-color: var(--light-pur-pink);
+    color: var(--text-color);
+    font-size: clamp(16px, 3vw, 24px);
+    padding: clamp(8px, 1.5vw, 16px);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    z-index: 10;
+}
+
+.prev {
+    grid-column: 1;
+}
+
+.next {
+    grid-column: 3;
+}
+
+/* --------- INDIKATORPRIKKER --------- */
 .slideshow-indicators {
-		grid-column: 2/3;
-		display: flex;
-		justify-content: center;
-		margin-top: 5px;
-		padding-bottom: 10px;
-	}
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    grid-column: 1 / -1;
+}
 
-	.slideshow-container {
-		position: relative; /* Gør det muligt at placere pile absolut i forhold til containeren */
-		width: 1000px;
-		height: 500px;
-		padding-top: 25px;
-	}
-	/* Billede styling */
-	.slide img {
-		width: 100%; /* Sørger for, at billedet ikke overstiger sin container */
-		max-width: 300px; /* Begrænser billedets maksimale bredde */
-	}
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
 
-	.slideshow-img {
-		margin-left: 100px;
-		max-height: 350px;
-		object-fit: contain;
-	}
-
-	.prev,
-	.next {
-		margin: 5px;
-	}
-
-	.prev:hover,
-	.next:hover {
-		color: var(--text-color);
-		background-color: var(--light-g);
-		transition: 0.5s;
-	}
+.dot.on {
+    background-color: var(--light-pur-pink);
+}
 
 
 
@@ -164,6 +284,10 @@ p{
 		font-size: 36px;
 	}
 
+	h3{
+		font-size: 24px;
+	}
+
 	a, p{
 		font-size: 20px;
 	}
@@ -176,21 +300,22 @@ p{
     justify-content: flex-start;
 	}
 
-	.li-desk {
+.li-desk {
 		display: none;
-	}
+}
 
-	.ul-desk{
-   	margin-left: 86%;
+.ul-desk{
+    margin-left: 86%;
     background-color: var(--light-pur-pink);
     position: fixed;
     z-index: 2;
-	height: 9px;
-  	width: 19px;
-	border-radius: 15px;
+    height: 50px;
+    width: 57px;
+    border-radius: 15px;
 } 
 
-	/* off-screen-menu */
+
+
 	.off-screen-menu {
 		z-index: 9;
 		background-color: var(--light-pur-pink);
@@ -214,6 +339,10 @@ p{
 	.off-screen-menu.active {
 		right: 0;
 		
+	}
+
+	.off-screen-menu ul{
+		margin-bottom: 100px;
 	}
 
 	/* ham menu */
@@ -260,40 +389,64 @@ p{
 
 /* om mig - mobil */
 
+.grid_1-1{
+    display: grid;
+    grid-template-columns: 1fr;
+	gap: 40px;
+}
+
 #om-mig-img{
 	max-width: 90%;
 	height: auto;
 	display: block;
+	border: 1.9px solid var(--text-color);
+	background-color: var(--bg-color);
+	border-radius: 15px;
+	padding-top: 20px;
+	order: -1;
+	
 }
 
 
 /* projekter */
 .slideshow-container {
 		min-height: 100px;
-		height: 550px;
+		height: auto;
 	}
 
 	.slide-content {
 		display: grid;
-		grid-template-columns: 1fr 1fr; /* Bevarer layoutet med billede + tekst ved siden af hinanden */
-		gap: 10px; /* Mindre afstand mellem elementer */
+		grid-template-columns: 1fr;
+		gap: 10px; 
+		padding: 10px;
 	}
+
+	.slide img{
+	width: 100%;
+	border: 2px solid var(--text-color);
+	border-radius: 15px;
+}
+
+.slideshow-img {
+	max-height: 600px;
+	width: 100%;
+	object-fit: contain;
+	margin-right: 30px;
+	
+}
 	.prev,
 	.next {
-		display: none; /* Skjuler navigationspile på mobil, da vi bruger swipe i stedet */
+		display: none; 
 	}
 
 	.cta {
-		display: inline-block; /* Gør knappen klikbar */
-		margin-bottom: 10px; /* Lidt afstand over knappen */
-		padding: 10px 20px; /* Sikrer plads til knappen */
+		display: inline-block; 
+		margin-bottom: 10px; 
+		padding: 10px 20px; 
 		margin-right: 20px;
 	}
 
-	/* Prikker under billedet på mobil */
-	.slideshow-indicators {
-		margin-top: 245px; /* Lidt tættere på billedet */
-		margin-left: -612px; /* Lidt tættere på billedet */
-	}
+	
 
 }
+
