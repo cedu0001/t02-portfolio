@@ -1,17 +1,19 @@
-.flex{
-    display: flex;
-    justify-content: space-between;
+
+
+h2{
+	margin-bottom: 20px;
 }
 
 /* header */
 
 .ul-desk{
-    margin-left: 86%;
+    margin-left: 88%;
     background-color: var(--light-pur-pink);
     position: fixed;
     padding: 20px;
     z-index: 2;
     border-radius: 15px;
+	border: 1.5px solid var(--text-color);
 } 
 
 .li-desk{
@@ -44,7 +46,10 @@
 
 /* mine evner */
 
-
+.icon-img-2 {
+    height: 70px;
+    max-width: 70px;
+}
 
 /* projekter */
 
@@ -93,7 +98,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr; 
 	align-items: center; 
-	gap: 20px; 
+	gap: 10px; 
 }
 
 .slide-content h3,
@@ -104,12 +109,15 @@
 /* Billede styling */
 .slide img {
 	width: 100%;
-	max-width: 200px; 
+	border: 2px solid var(--text-color);
+	border-radius: 15px;
 }
 
 .slideshow-img {
-	max-height: 200px;
+	max-height: 700px;
+	width: 100%;
 	object-fit: contain;
+	
 }
 
 /* --------- CTA KNAP --------- */
@@ -118,10 +126,8 @@
 	margin-top: 10px; 
 	padding: 10px 20px; 
 	background-color: var(--light-pur-pink); 
-	color: var(--text-color); 
-	font-weight: bold; 
+	color: var(--text-color);  
 	border-radius: 45px; 
-	font-family: robotomono;
 }
 
 /* --------- NAVIGATIONSPILE --------- */
@@ -165,8 +171,26 @@
 
 /* kontakt */
 
-
 .footer-style{
     margin-top: 30px;
 	margin-bottom: 60px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex a, .flex p {
+    display: flex; 
+    align-items: center;
+    margin: 5px 0;
+}
+
+.icon-img {
+    height: 40px;
+    max-width: 40px;
+    margin-right: 5px;
 }

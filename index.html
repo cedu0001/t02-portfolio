@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celia Nielsen | Portfolio</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="assets/site.webmanifest">
+
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/burger-menu.js" defer></script>
@@ -25,7 +31,7 @@
 			<div class="off-screen-menu">
 				<ul>
 					<li><a href="#om-mig">Om mig</a></li>
-					<li><a href="#evner">Mine evner</a></li>
+					<li><a href="#evner">Evner</a></li>
 					<li><a href="#projekter">Projekter</a></li>
 					<li><a href="#kontakt">Kontakt</a></li>
 				</ul>
@@ -35,7 +41,7 @@
             <!-- desktop header -->
             <ul class="ul-desk">
                 <li class="li-desk"><a href="#om-mig">Om mig</a></li>
-                <li class="li-desk"><a href="#evner">Mine evner</a></li>
+                <li class="li-desk"><a href="#evner">Evner</a></li>
                 <li class="li-desk"><a href="#projekter">Projekter</a></li>
                 <li class="li-desk"><a href="#kontakt">Kontakt</a></li>
             </ul>
@@ -49,47 +55,89 @@
     </header>
 
     <main>
-        <img src="/img/wave.webp"  class="stretch" alt="">
+        <img src="assets/wave.webp"  class="stretch" alt="">
         <section class="green-bg">
             <div id="wave">
                 <h2 id="om-mig">Om mig</h2>
 
                 <div class="grid_1-1">
                     <div>
-                        <p>Hej</p>
                         <p>
-                            Mit navn er Celia, og jeg studerer multimediedesign på Erhvervsakademi København, 
-                            hvor jeg begyndte i januar 2025 og nu er i gang med mit tredje semester.
+                            Jeg studerer multimediedesign på Erhvervsakademi København 
+                            og er jeg i gang med mit tredje semester, hvor jeg har valgt frontend som mit valgfag.
                         </p>
 
                         <p>
-                            Noget af det vigtigste, jeg har taget med mig indtil videre, er forståelsen for hele den kreative og tekniske proces 
-                            – fra idé til færdig digital løsning. Gennem arbejdet med designmetoder, 
-                            indholdsproduktion og grundlæggende webudvikling har jeg opbygget et stærkt fundament.
-                            Jeg har især fået solid erfaring med HTML, CSS og JavaScript, som jeg aktivt bruger i vores projekter. 
+                            Noget af det vigtigste jeg har taget med mig, er forståelsen for hele den kreative og tekniske proces – fra idé til færdig digital løsning. 
+                            På baggrund af en masse projekter med fokus på designmetoder, indholdsproduktion og grundlæggende webudvikling, har jeg opbygget et godt fundament. 
                         </p>
+
+                        <p>Jeg ser mig selv arbejde i et kreativt miljø, hvor man ved kombination af det grafiske og kodning kan kreere nogle gode webløsninger.</p>
+
                     </div>
 
                     <div>
-                        <img src="/img/ommig.webp" id="om-mig-img" alt="">
+                        <img src="/img/om-mig.webp" id="om-mig-img" alt="">
                     </div>
 
                 </div>
 
             </div>
         </section>
-         <img src="/img/wave.webp"  class="stretch" id="flip" alt="">
+         <img src="assets/wave.webp"  class="stretch" id="flip" alt="">
 
         <section class="container">
             <h2 id="evner">Mine evner</h2>
 
-            
+            <div class="grid_1-1 footer-style">
+
+                <div>
+                    <h3>Kodning</h3>
+                        <div class="flex">
+                            <p><span><img src="assets/HTML-icon.webp" class="icon-img-2" alt=""></span>HTML5</p>
+                        </div>
+
+                        <div class="flex">
+                            <p><span><img src="assets/CSS-icon.webp" class="icon-img-2" alt=""></span>CSS</p>
+                        </div>
+
+                        <div class="flex">
+                            <p><span><img src="assets/JS-icon.webp" class="icon-img-2" alt=""></span>JS</p>
+                        </div>
+
+                        <div class="flex">
+                            <p><span><img src="assets/VScode-icon.webp" class="icon-img-2" alt=""></span>VS Code</p>
+                        </div>
+
+                        <div class="flex">
+                            <p><span><img src="assets/github-icon.webp" class="icon-img-2" alt=""></span>GitHub</p>
+                        </div>
+
+                </div>
+                
+                <div>
+                    <h3>Grafisk</h3>
+                        <div class="flex">
+                            <p><span><img src="assets/figma-icon.webp" class="icon-img-2" alt=""></span>Figma</p>
+                        </div>
+
+                         <div class="flex">
+                             <p><span><img src="assets/PS-icon.webp" class="icon-img-2" alt=""></span>Photoshop</p>
+                        </div>
+
+                         <div class="flex">
+                            <p><span><img src="assets/procreate-icon.webp" class="icon-img-2" alt=""></span>Procreate</p>
+                        </div>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <section id="projekter">
-            <div class="container">
-                <h2>Projekter</h2>
+        <section id="projekter" >
+            <div class="container" >
+                <h2 class="footer-style">Projekter</h2>
 			<!-- --------- SLIDESHOW CONTAINER --------- -->
 			<div class="slideshow-container">
 				
@@ -97,19 +145,17 @@
 				<!-- Første slide -->
 				<div class="slide active">
 					<div class="slide-content">
-						<img
-							src="img/nissinkylling.webp"
-							alt="Nissin Kylling kop nudel"
-							class="slideshow-img"
-							loading="lazy"
-						/>
+						<img src="img/projekt-1.webp" alt=""class="slideshow-img"/>
+                        
 						<div>
-							<h3>Nissin Kylling Klassisk Asiatisk Stil</h3>
-							<p>
-								En harmonisk blanding af fyldig kyllingebouillon, umami-rige krydderier og perfekt kogte
-								nudler – klar på få minutter!
-							</p>
-							<a href="nyheder.html#nissinkylling" class="cta">læs mere her!</a>
+							<h3>Re-design forslag for Sølve</h3>
+							<p>Dette projekt gav en grundlæggende introduktion til indholdsproduktion og samarbejde med eksterne partnere.</p>
+                            <p>Her skulle vi i grupper kontakte en virksomhed med en hjemmeside, som mente at de havde behov for et forslag til et redesign. 
+                            Vores gruppe kom i kontakt med psykologen, Sølve Storm, hvor vi efter et møde fandt ud af bl.a. hvilken stil og funktioner som hjemmesiden skulle kunne.</p>
+                            <p>
+                                En af mine roller i dette projekt var at illustrere 3 tegninger, som ville passe til undersiden “Normkritik”.
+                            </p>
+							
 						</div>
 					</div>
 				</div>
@@ -117,14 +163,13 @@
 				<!-- Andet slide -->
 				<div class="slide">
 					<div class="slide-content">
-						<img src="img/nissinbeef.webp" alt="Nissin Oksekød kop nudel" class="slideshow-img" loading="lazy" />
+						<img src="img/projekt-2.webp" alt="" class="slideshow-img"/>
 						<div>
-							<h3>Nissin Oksekød Aromatisk Stærk Suppe</h3>
+							<h3>Arbejde med webshop og API'er</h3>
 							<p>
-								En kraftig og krydret oksekødsbouillon med dyb umami, bløde nudler og varme krydderier.
-								Perfekt til en intens og aromatisk oplevelse. - klar på få minutter!
+								ahhh
 							</p>
-							<a href="nyheder.html#nissinbeef" class="cta">læs mere her!</a>
+							<a href="https://jest0003.github.io/gruppe_1_t8/index.html" target="_blank" class="cta">Se hjemmesiden her!</a>
 						</div>
 					</div>
 				</div>
@@ -132,14 +177,13 @@
 				<!-- Tredje slide -->
 				<div class="slide">
 					<div class="slide-content">
-						<img src="img/nissinspicy.webp" alt="Nissin Spicy kop nudel" class="slideshow-img" loading="lazy" />
+						<img src="img/projekt-3.webp" alt="" class="slideshow-img" />
 						<div>
-							<h3>Nissin Spicy Stærk Chili</h3>
+							<h3>Re-design af NV-Foto</h3>
 							<p>
-								Intens varme og dyb chilismag kombineret med lækre nudler for en stærk og tilfredsstillende
-								oplevelse! - klar på få minutter!
+								
 							</p>
-							<a href="nyheder.html#nissinspicy" class="cta">læs mere her!</a>
+							<a href="http://nv-foto.dk/" target="_blank" class="cta">Se hjemmesiden her!</a>
 						</div>
 					</div>
 				</div>
@@ -170,9 +214,9 @@
             <h2 id="kontakt">Kontakt</h2>
 
             <div class="flex">
-                <p>LinkedIn</p>
-                <p>mobilnr.</p>
-                <p>skole email</p>
+                <a href="https://www.linkedin.com/in/celia-nielsen-b42b8434a/" target="_blank"><span><img src="assets/linkedin-icon.webp" class="icon-img" alt=""></span>Linkedin</a>
+                <p><span><img src="assets/mail-icon.webp" class="icon-img" alt=""></span>cedu0001@stud.ek.dk</p>
+                <p><span><img src="assets/phone-icon.webp" class="icon-img" alt=""></span>45+ 52655974</p>
             </div>
     </footer>
 
