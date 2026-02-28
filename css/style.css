@@ -49,40 +49,6 @@ h2{
     background-color: var(--light-p);
 }
 
-
-
-
-
-/* .slideshow-indicators {
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
-	padding-bottom: 10px;
-    justify-content: space-evenly;
-}
-
-.dot {
-	height: 12px;
-	width: 12px;
-	margin: 0 5px;
-	background-color: gray;
-	border-radius: 50%;
-	display: inline-block;
-	cursor: pointer;
-}
-
-@media (max-width: 800px){
-	.slideshow-indicators div{
-		background-color: aquamarine;
-		
-}
-
-}
-
-.dot.on {
-	background-color: var(--light-pur-pink)
-} */
-
 /* slideshow slut */
 
 
