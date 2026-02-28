@@ -165,27 +165,38 @@ p{
 /* computer/ desktop */
 @media (min-width: 800px) {
 
+.ul-desk {
+        margin-right: auto; 
+        margin-left: 88%;
+        background-color: var(--light-pur-pink);
+        position: fixed;
+        padding: 20px;
+        z-index: 1000;
+        border-radius: 15px;
+        border: 1.5px solid var(--text-color);
+        top: 20px; 
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .li-desk {
+        margin-top: 10px;
+    }
+
+    .ul-desk li a {
+        text-decoration: none;
+        color: var(--text-color);
+        padding: 5px 10px;
+    }
+
+    .ul-desk li a.active-link {
+        background-color: var(--light-g);
+        border-radius: 5px;
+    }
+
 	
-
-.ul-desk{
-    margin-left: 88%;
-    background-color: var(--light-pur-pink);
-    position: fixed;
-    padding: 20px;
-    z-index: 2;
-    border-radius: 15px;
-	border: 1.5px solid var(--text-color);
-} 
-
-.li-desk{
-    margin-top: 20px;
 }
 
-.ul-desk li a.active-link {
-    background-color: var(--light-g);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
 
 .container, #wave{
     margin: auto 180px;
@@ -339,7 +350,7 @@ p{
 
 
 
-}
+
 
 /* mobil */
 @media (max-width: 800px) {
@@ -368,21 +379,34 @@ p{
     justify-content: flex-start;
 	}
 
-.li-desk {
-		display: none;
-}
 
-.ul-desk{
-    margin-left: 86%;
-    background-color: var(--light-pur-pink);
-    position: fixed;
-    z-index: 2;
-    height: 50px;
-    width: 57px;
-    border-radius: 15px;
-} 
+ .ul-desk {
+		margin-left: 88%;
+        background-color: var(--light-pur-pink);
+        position: fixed;
+        z-index: 1000;
+        height: 50px;
+        width: 50px;
+        border-radius: 15px;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+    }
 
+    .li-desk {
+        display: none;
+    }
 
+    .ham-menu {
+        z-index: 1001;
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
 
 	.off-screen-menu {
 		z-index: 9;
@@ -413,15 +437,10 @@ p{
 		margin-bottom: 100px;
 	}
 
-	/* ham menu */
-	.ham-menu {
-		z-index: 10;
-		height: 50px;
-		width: 40px;
-		margin-left: 88%;
-		position: fixed;
-	
-	}
+
+
+
+
 	.ham-menu span {
 		height: 5px;
 		width: 100%;
