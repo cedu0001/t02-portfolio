@@ -1,12 +1,5 @@
 
-
-h2{
-	margin-bottom: 20px;
-}
-
 /* header */
-
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -47,34 +40,4 @@ h2{
 
 #projekter{
     background-color: var(--light-p);
-}
-
-/* slideshow slut */
-
-
-
-/* kontakt */
-
-.footer-style{
-    margin-top: 30px;
-	margin-bottom: 60px;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.flex a, .flex p {
-    display: flex; 
-    align-items: center;
-    margin: 5px 0;
-}
-
-.icon-img {
-    height: 40px;
-    max-width: 40px;
-    margin-right: 5px;
 }
